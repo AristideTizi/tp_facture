@@ -25,7 +25,7 @@ prixTotal=0
 
 t = PrettyTable(['Nom du produit', 'Prix unitaire', 'quantite', 'Prix total'])
 for prod in listeProduits:
-	t.add_row([prod["prix"], prod["prix"], prod["quantite"], prod["prix"]*prod["quantite"]])
+	t.add_row([prod["nom"], prod["prix"], prod["quantite"], prod["prix"]*prod["quantite"]])
 	prixTotal+=(prod["prix"]*prod["quantite"])
 print(t)
 
